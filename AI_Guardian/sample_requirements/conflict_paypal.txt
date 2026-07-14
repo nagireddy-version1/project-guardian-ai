@@ -1,0 +1,6 @@
+Title: Add PayPal for launch day
+
+Sales request: Acme Retail requires PayPal beside Stripe on day one of launch,
+or they will delay the contract.
+
+Please enable PayPal as a payment option for MVP.

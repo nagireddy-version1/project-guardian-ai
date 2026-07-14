@@ -1,0 +1,20 @@
+JIRA STORY EXPORT — Simulated source: Jira
+Project: SHOP
+Story: SHOP-214
+Title: Add guest checkout without account creation
+Status: To Do
+Updated: 2026-07-12
+
+Description:
+As a customer, I want to complete checkout without creating an account so that I can buy faster.
+
+Acceptance Criteria:
+- Guest users can place an order with email only
+- No Azure AD / SSO required for guest checkout path
+- Optional password create-account prompt after purchase
+
+Comments:
+- Product: this is a P1 for conversion
+- Engineering: note this may conflict with previous auth decisions
+
+This document simulates a Jira story update event for later conflict detection.

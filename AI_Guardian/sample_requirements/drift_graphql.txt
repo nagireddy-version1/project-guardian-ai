@@ -1,0 +1,4 @@
+Title: Partner GraphQL gateway
+
+Introduce a GraphQL gateway for external partner integrations to replace some
+versioned REST endpoints in the current release.

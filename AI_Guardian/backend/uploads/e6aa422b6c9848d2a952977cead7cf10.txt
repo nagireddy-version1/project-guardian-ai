@@ -1,0 +1,47 @@
+PROJECT GUARDIAN — Sprint Planning Meeting Notes
+Simulated source: Microsoft Teams meeting transcript
+Date: 2026-07-08
+Attendees: Priya (PM), Alex (Tech Lead), Sam (BA), Jordan (Dev)
+
+----------------------------------------
+DISCUSSION (ignore these for decisions)
+----------------------------------------
+- Team discussed whether to support guest checkout later.
+- Sam suggested maybe adding SMS OTP as a nice-to-have.
+- Question: Should we migrate the legacy reporting DB this quarter?
+
+----------------------------------------
+FINAL DECISIONS
+----------------------------------------
+
+DECISION 1 — Authentication
+Title: Use Azure AD OAuth for all user authentication
+Category: Security / Authentication
+Decision: All user-facing applications MUST authenticate exclusively via Azure AD OAuth 2.0. Username/password local auth is not allowed.
+Reason: Corporate identity standard and audit requirements for FY26.
+Confidence: High
+
+DECISION 2 — Primary Database
+Title: PostgreSQL is the system of record
+Category: Architecture / Data
+Decision: PostgreSQL is the only approved transactional database for customer and order data. No new MySQL or MongoDB stores for core domain entities.
+Reason: Existing ops expertise and managed Azure Database for PostgreSQL available.
+Confidence: High
+
+DECISION 3 — Payment Provider
+Title: Stripe is the payment processor
+Category: Integrations / Payments
+Decision: Stripe is the sole payment gateway for card payments in v1. PayPal is out of scope for the initial release.
+Reason: Faster PCI path and existing Stripe enterprise agreement.
+Confidence: High
+
+DECISION 4 — API Style
+Title: REST APIs for external partners
+Category: Architecture / API
+Decision: External partner integrations will use versioned REST APIs. GraphQL is deferred and not approved for partner-facing surfaces in this release.
+Reason: Partner tooling maturity and simpler SLA ownership.
+Confidence: Medium
+
+ACTION ITEMS
+- Alex to publish ADR for Azure AD OAuth
+- Priya to communicate PayPal deferral to sales

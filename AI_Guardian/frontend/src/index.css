@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Segoe UI", "Segoe UI Variable", "Helvetica Neue", sans-serif;
+  --color-fluent-bg: #f3f2f1;
+  --color-fluent-surface: #ffffff;
+  --color-fluent-border: #edebe9;
+  --color-fluent-text: #242424;
+  --color-fluent-muted: #605e5c;
+  --color-fluent-brand: #0f6cbd;
+  --color-fluent-brand-hover: #115ea3;
+  --color-fluent-sidebar: #201f1e;
+  --color-fluent-sidebar-text: #f3f2f1;
+  --color-fluent-success: #107c10;
+  --color-fluent-warning: #835c00;
+  --color-fluent-danger: #d13438;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--color-fluent-bg);
+  color: var(--color-fluent-text);
+  -webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,4 @@
+Title: Confirm Stripe payment decision
+
+As agreed / already decided: confirm that Stripe remains the sole payment gateway
+for card payments in v1 and PayPal stays out of scope.

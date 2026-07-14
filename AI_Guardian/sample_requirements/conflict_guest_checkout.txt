@@ -1,0 +1,9 @@
+Title: Guest checkout without account creation
+
+As a customer, I want to complete checkout with email only and no Azure AD / SSO,
+so that I can buy faster without creating an account.
+
+Acceptance criteria:
+- Guest users can place an order with email only
+- No Azure AD required on the guest path
+- Optional create-account prompt after purchase

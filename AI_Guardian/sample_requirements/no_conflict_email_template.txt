@@ -1,0 +1,4 @@
+Title: Order confirmation email template
+
+Add a transactional email template for successful Stripe payments and PostgreSQL
+order records. No change to authentication, payments, or API standards.

@@ -1,0 +1,18 @@
+EMAIL THREAD — Simulated source: Outlook / shared project mailbox
+From: sales@contoso.example
+To: project-shop@contoso.example
+Subject: Customer request — PayPal support for launch
+Date: 2026-07-10
+
+Hi team,
+
+Acme Retail says PayPal must be available on day one of launch or they will delay their contract.
+
+Can we include PayPal beside Stripe for the MVP?
+
+Thanks,
+Sales Operations
+
+---
+
+This email simulates an Outlook event that may conflict with the Stripe-only payment decision.
